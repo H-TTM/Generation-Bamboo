@@ -1,0 +1,454 @@
+/*****************GENERIC SECTION*****************/
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+/*****************GENERIC SECTION END*****************/
+
+
+
+/*****************NAVIGATION BAR SECTION*****************/
+
+.navbar {
+	padding: .7rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	transition: background-color .5s ease 0s;
+  background-color: transparent;
+}
+
+.navbar .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*This enabled me to remove dependcy from navbar-dark and copied the hamburger sign from the scss*/
+
+.navbar-nav .nav-link {
+  /*padding-top: .8rem;*/
+	color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: orange;
+}
+
+
+.navbar-brand img {
+	height: 2.5rem;
+}
+
+.navbar-nav li {
+	padding-right: .8rem;
+}
+
+.navbar.background-green {
+	background-color: darkgreen;
+}
+
+
+/*****************NAVIGATION BAR SECTION ***END**************/
+
+
+/*****************LANDING SECTION*****************/
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+  background-image: url(img/bamboo-walkway-large.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+
+.btn-landing {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+.button-landing {
+  background-color: transparent;
+  border: solid white 2px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  /*opacity: 0.6;*/
+  transition: .5s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-landing:hover {
+  background-color: white;
+  color: black;
+}
+
+.landing-caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+
+.landing-caption h1 {
+  color: white;
+  font-size: 4.5rem;
+  /*text-transform: uppercase;*/
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.landing-caption h3 {
+  color: white;
+  font-size: 2.5rem;
+  /*text-transform: uppercase;*/
+  font-weight: 400;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+}
+
+
+/*****************LANDING SECTION END*****************/
+
+
+
+/*****************BODY SECTION*****************/
+
+.main-body {
+	padding-top: 1.5rem;
+	background-color: #FFFFFF;
+}
+
+
+.body-content {
+    max-width: 80%;
+    margin: 0 auto;
+    word-spacing: 1px;
+    line-height: 160%;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .body-content {
+    max-width: 100%;
+  }
+}
+
+.body-introduction {
+  padding-bottom: 1rem;
+}
+
+
+.bullet-row ul {
+  list-style-image: url('img/bamboo-icon-10px.jpg');
+  display: inline-block;
+  text-align: left;
+}
+
+
+
+
+
+.fa-6x {
+  color: green;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  div.row-picture-description {
+    height: 700px;
+  }
+}
+
+
+.picture-column img{
+  float: left;
+  /* max-height: 335px; */
+  max-width: 100%;
+  overflow: auto;
+}
+
+
+
+
+
+.row-picture-description {
+  background-color: white;
+  /*padding: 0rem!important;*/
+  /*transition: transform .7s ease;*/
+  overflow: hidden;
+  position: relative;
+  /*margin: 2rem 0rem;*/
+  /*max-height: 335px;*/
+  /*text-align: center;*/
+  height: 350px;
+}
+
+
+
+
+.column-description {
+  padding: 1rem 2rem!important;
+}
+
+
+.column-picture {
+  background-size:cover;
+}
+
+.column-picture img {
+  overflow: auto;
+}
+
+
+
+
+
+/*****************BODY SECTION END*****************/
+
+
+/*============= FONT-SIZING SECTION =============*/
+
+
+
+
+h1 {
+  font-size: 2.625rem
+  line-height: 119%
+  letter-spacing: 0;
+}
+
+
+@media (min-width: 42rem) {
+  h1 {
+    font-size: calc(2.625rem + 0.75*(100vw - 42rem)/24);
+  }
+}
+
+@media (min-width: 66rem) {
+  h1 {
+    font-size: calc(2.625rem + 0.375*(100vw - 66rem)/16);
+    line-height: 119%;
+  }
+}
+
+@media (min-width: 82rem) {
+  h1 {
+    /*font-size: calc(3.75rem + 1*(100vw - 82rem)/17);*/
+    line-height: 125%;
+  }
+}
+
+@media (min-width: 99rem) {
+  h1 {
+    font-size: 4.75rem;
+    line-height: 113%;
+  }
+}
+
+
+
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 129%;
+  letter-spacing: 0;
+}
+
+@media (min-width: 82rem) {
+  h2 {
+    font-size: calc(1.75rem + .25*(100vw - 82rem)/17);
+  }
+}
+
+@media (min-width: 99rem) {
+  h2 {
+    font-size: 2rem;
+    line-height: 125%;
+  }
+}
+
+
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@media (min-width: 82rem) {
+  h3 {
+    font-size: calc(1.25rem + .25*(100vw - 82rem)/17);
+    line-height: 125%;
+  }
+}
+
+@media (min-width: 99rem) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+p {
+  font-size: 50px;
+}
+
+p {
+  font-size: 1.25rem!important;
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+@media (min-width: 82rem) {
+  p {
+    font-size: calc(1.25rem + 0.25*(100vw - 82rem)/17);
+    line-height: 125%;
+  }
+}
+
+@media (min-width: 99rem) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/*============= FONT-SIZING SECTION END=============*/
+
+
+/*============= FOOTER SECTION =============*/
+
+
+
+footer {
+  color: white;
+  justify-content: center!important;
+}
+
+footer .row {
+  background-color: darkgreen;
+  width: 100%;
+  margin: 0;
+  justify-content: center!important;
+}
+
+/*============= FOOTER END SECTION =============*/
+
+
+
+/*****************MEDIUM SCREEN MEDIA SECTION*****************/
+
+@media (min-width: 768px) {
+.navbar-expand-md {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+  div.pages-content {
+    font-size: 16px;
+    max-width: 90%;
+    line-height: 180%;
+    word-spacing: 1.4px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  div.pages-content p{
+    line-height: 180%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   div.pages-content h1 {
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+   div.caption h1 {
+   margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+   max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   div.caption h3 {
+    text-align: center;
+    font-size: 1.6rem;
+   line-height: 180%;
+   max-width: 80%;
+   margin: 0 auto;
+  }
+}
+
+
+/*****************MEDIUM SCREEN MEDIA SECTION END*****************/
+
+
+
+/*****************SMALL SCREEN MEDIA SECTION*****************/
+
+
+
+@media screen and (max-width: 450px) {
+   div.caption h1 {;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 2rem;
+   padding-bottom: 1rem;
+   max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+   div.caption h3 {;
+   font-size: 1.3rem;
+   line-height: 180%;
+   max-width: 80%;
+   margin: 0 auto;
+  }
+}
+
+
+/*****************SMALL SCREEN MEDIA SECTION END*****************/
+
+
