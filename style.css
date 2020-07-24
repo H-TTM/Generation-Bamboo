@@ -38,7 +38,7 @@
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-	color: orange;
+	color: #c3dfd9;
 }
 
 
@@ -51,7 +51,7 @@
 }
 
 .navbar.background-green {
-	background-color: darkgreen;
+	background-color: #379683;
 }
 
 
@@ -155,7 +155,15 @@
 }
 
 .body-introduction {
+  padding: 1rem 0;
+}
+
+.body-introduction-header {
   padding-bottom: 1rem;
+}
+
+.icon-row {
+  padding-top: 1rem;
 }
 
 
@@ -170,7 +178,7 @@
 
 
 .fa-6x {
-  color: green;
+  color: #379683;
   padding-bottom: 1rem;
 }
 
@@ -180,15 +188,22 @@
   }
 }
 
+.picture-column {
+  margin: .5rem;
+  box-shadow: 5px black;
+}
 
 .picture-column img{
   float: left;
   /* max-height: 335px; */
   max-width: 100%;
   overflow: auto;
+  padding-bottom: 1rem
 }
 
-
+.picture-column h3 {
+  padding-bottom: 1rem;
+}
 
 
 
@@ -350,7 +365,7 @@ footer {
 }
 
 footer .row {
-  background-color: darkgreen;
+  background-color: #379683;
   width: 100%;
   margin: 0;
   justify-content: center!important;
