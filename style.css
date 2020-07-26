@@ -199,6 +199,7 @@
   /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;*/
   box-shadow: 0 .1rem .3rem  #379683!important;
   margin-bottom: 2rem;
+  min-height: 550px;
 }
 
 .picture-column img{
