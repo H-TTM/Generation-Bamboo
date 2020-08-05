@@ -221,7 +221,7 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   div.row-picture-description {
     height: 700px;
   }
@@ -272,11 +272,14 @@ body {
 
 .column-description {
   padding: 1rem 2rem!important;
+  min-height: 250px;
+  max-height: 350px;
 }
 
 
 .column-picture {
   background-size:cover;
+  height: 350px;
 }
 
 .column-picture img {
